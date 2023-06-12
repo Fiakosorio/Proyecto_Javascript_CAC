@@ -1,0 +1,25 @@
+.buyButtonButtonModifier {
+    background-color: rgb(150, 201, 62);
+    color: white;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid rgb(150, 201, 62);
+  }
+  
+  .buyButtonButtonModifier:hover {
+    color: rgb(150, 201, 62);
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .form-control:disabled {
+    background-color: rgb(204, 229, 255);
+    border: 1px solid rgb(184, 218, 255);
+  }
+  
+  .form-control:disabled::placeholder {
+    color: rgb(0, 64, 165);
+  }

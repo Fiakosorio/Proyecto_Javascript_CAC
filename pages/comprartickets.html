@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Javascript</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- google fonts -->
+    <script src="../js/ae9375b602.js"></script>
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="../css/comprartickets.css" />
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="p-0 m-0 customHeader container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light backgroundColor">
+        <div class="container">
+          <a class="navbar-brand text-white" href="../index.html">
+            <img
+              src="../assets/img/codoacodo1-removebg-preview.png"
+              alt="Codo a Codo logo"
+              width="100px"
+            />
+            Conf Bs As
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 justify-content-end">
+              <li class="nav-item d-flex justify-content-center">
+                <a
+                  class="nav-link active text-center"
+                  aria-current="page"
+                  href="../index.html#conference"
+                  >La conferencia</a
+                >
+              </li>
+              <li class="nav-item d-flex justify-content-center">
+                <a
+                  class="nav-link navLink2 text-center"
+                  href="../index.html#speakers"
+                  >Los oradores</a
+                >
+              </li>
+              <li class="nav-item d-flex justify-content-center">
+                <a
+                  class="nav-link navLink2 text-center"
+                  href="../index.html#placeDate"
+                  >El lugar y la fecha</a
+                >
+              </li>
+              <li class="nav-item d-flex justify-content-center">
+                <a
+                  class="nav-link navLink2 text-center"
+                  href="../index.html#form"
+                  >Conviértete en orador</a
+                >
+              </li>
+              <li class="nav-item d-flex justify-content-center">
+                <a
+                  class="nav-link green text-center"
+                  href="../pages/comprartickets.html"
+                  >Comprar tickets</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container p-0">
+        <div class="row mt-4 mb-0 me-auto ms-auto customFormWidth">
+          <div class="col-md-4 mb-2 ps-md-0 pe-md-1">
+            <div class="col card border border-primary pt-3">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-4">Estudiante</h5>
+                <p class="card-subtitle mb-4">Tienen un descuento</p>
+                <h6 class="mb-4"><b>80%</b></h6>
+                <p class="card-text smallTextForm pb-3">
+                  * presentar documentación
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-2 ps-md-0 pe-md-1">
+            <div class="col card border border-success pt-3">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-4">Trainee</h5>
+                <p class="card-subtitle mb-4">Tienen un descuento</p>
+                <h6 class="mb-4"><b>50%</b></h6>
+                <p class="card-text smallTextForm pb-3">
+                  * presentar documentación
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-2 ps-md-0 pe-md-0">
+            <div class="col card border border-warning pt-3">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-4">Junior</h5>
+                <p class="card-subtitle mb-4">Tienen un descuento</p>
+                <h6 class="mb-4"><b>15%</b></h6>
+                <p class="card-text smallTextForm pb-3">
+                  * presentar documentación
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2
+          class="d-flex flex-column justify-content-center align-items-center fs-2 p-3 mb-0"
+        >
+          <div class="smallTextForm">VENTA</div>
+          <div>VALOR DE TICKET $200</div>
+        </h2>
+
+        <form
+          class="d-flex flex-column customFormWidth me-auto ms-auto"
+          id="form"
+        >
+          <div class="row">
+            <div class="col-12 col-md-6 mb-3">
+              <input
+                id="name"
+                type="text"
+                class="form-control"
+                placeholder="Nombre"
+                aria-label="Nombre"
+              />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <input
+                id="surname"
+                type="text"
+                class="form-control"
+                placeholder="Apellido"
+                aria-label="Apellido"
+              />
+            </div>
+          </div>
+
+          <div class="col-12 mb-3">
+            <input
+              id="email"
+              type="email"
+              class="form-control"
+              placeholder="Correo"
+              aria-label="Correo"
+            />
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 mb-3">
+              <div>Cantidad</div>
+              <div>
+                <input
+                  id="quantity"
+                  type="number"
+                  class="form-control"
+                  placeholder="cantidad"
+                  aria-label="cantidad"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <div>Categoria</div>
+              <select class="form-select" aria-label="categoria" id="category">
+                <option value="" selected>Seleccione una categoría</option>
+                <option value="1">Estudiante</option>
+                <option value="2">Trainee</option>
+                <option value="3">Junior</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mt-3 mb-3">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="totalCharge"
+              placeholder="Total a Pagar: $"
+              aria-label="totalCost"
+              disabled="disabled"
+            />
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <button
+                type="reset"
+                class="btn buyButtonButtonModifier mb-0"
+                id="resetButton"
+              >
+                Borrar
+              </button>
+            </div>
+            <div class="col-12 col-md-6">
+              <button
+                type="submit"
+                class="btn buyButtonButtonModifier"
+                id="submitButton"
+              >
+                Resumen
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row py-4 align-items-center violetHover">
+          <a
+            class="col-sm-12 customCol text-decoration-none text-center customColor customMargin"
+            href=""
+            >Preguntas frecuentes</a
+          >
+          <!-- Investigation: since we have an odd number of columns and bootstrap works by default with even columns,
+          the only way to center odd columns is to just use the class "col". But since we want col-sm-12 for mobile,
+          if we do class="col-sm-12 col", then col will NOT be applied since col-sm-12 applies for any width >= 576px.
+          If we do class="col-sm-12 col-md", then col-md will NOT be applied since there are specificity problems.
+          So the only hack to center odd columns is to add a customCol class that will do exactly the same as col,
+          but this will be more specific since it will apply for each screen. -->
+          <a
+            class="col-sm-12 customCol text-decoration-none text-center customColor customMargin"
+            href=""
+            >Contáctanos</a
+          >
+          <a
+            class="col-sm-12 customCol text-decoration-none text-center customColor customMargin"
+            href=""
+            >Prensa</a
+          >
+          <a
+            class="col-sm-12 customCol text-decoration-none text-center customColor customMargin"
+            href=""
+            >Conferencias</a
+          >
+          <a
+            class="col-sm-12 customCol text-decoration-none text-center customColor customMargin"
+            href=""
+            >Términos y condiciones</a
+          >
+          <a
+            class="col-sm-12 customCol text-decoration-none text-center customColor customMargin"
+            href=""
+            >Privacidad</a
+          >
+          <a
+            class="col-sm-12 customCol text-decoration-none text-center customColor customMargin"
+            href=""
+            >Estudiantes</a
+          >
+          <a href=""><i class="fa-brands fa-whatsapp icon"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/comprartickets.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/sweetalert2@11.js"></script>
+  </body>
+</html>
